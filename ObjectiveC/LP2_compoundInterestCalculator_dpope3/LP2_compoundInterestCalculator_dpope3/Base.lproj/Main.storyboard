@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Compound Interest Calculator" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6lC-lh-W5E">
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="22"/>
+                                <color key="textColor" red="0.26663423872584879" green="0.21266260497096234" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Principal Amount" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GNv-Qu-wCy">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Interest Rate Pct" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1gK-op-OqP">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Number of Years" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DPt-hh-FFp">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="b6r-ZN-vHb">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="97" id="KgE-HV-tv3"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RcH-hj-xHw">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="97" id="V5z-iW-wOA"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="G8d-my-qxs">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="97" id="QfG-x7-vU3"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ief-1S-YGq">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="97" id="00X-LS-h5I"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="textFieldsTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ucV-Cl-xms"/>
+                                </connections>
+                            </textField>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="5fE-u1-3TB">
+                                <color key="backgroundColor" red="0.95595854922279788" green="0.95595854922279788" blue="0.95595854922279788" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="5lB-se-lHd"/>
+                                    <constraint firstAttribute="height" constant="158" id="RA2-p3-L9S"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Times per Year" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t75-ii-Y5O">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JBa-xV-4N3">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="0dG-kN-TIC"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="22"/>
+                                <state key="normal" title="Calculate Interest"/>
+                                <connections>
+                                    <action selector="calculateCompoundInterest:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hhP-4M-e6x"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.9039630785698658" green="0.97994619797371596" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="tintColor" red="0.26663423870000003" green="0.212662605" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="RcH-hj-xHw" firstAttribute="leading" secondItem="1gK-op-OqP" secondAttribute="trailing" constant="41" id="31v-8b-KWc"/>
+                            <constraint firstItem="5fE-u1-3TB" firstAttribute="top" secondItem="JBa-xV-4N3" secondAttribute="bottom" constant="29" id="Brx-rc-25C"/>
+                            <constraint firstItem="ief-1S-YGq" firstAttribute="top" secondItem="G8d-my-qxs" secondAttribute="bottom" constant="35" id="E35-On-OC0"/>
+                            <constraint firstItem="GNv-Qu-wCy" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="41" id="ERd-Pg-xep"/>
+                            <constraint firstItem="JBa-xV-4N3" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="GDH-Qq-Dev"/>
+                            <constraint firstItem="b6r-ZN-vHb" firstAttribute="top" secondItem="6lC-lh-W5E" secondAttribute="bottom" constant="45" id="Kzg-z1-dPz"/>
+                            <constraint firstItem="b6r-ZN-vHb" firstAttribute="leading" secondItem="GNv-Qu-wCy" secondAttribute="trailing" constant="37" id="L1x-fC-eio"/>
+                            <constraint firstItem="t75-ii-Y5O" firstAttribute="top" secondItem="DPt-hh-FFp" secondAttribute="bottom" constant="44" id="OFF-bI-IW2"/>
+                            <constraint firstItem="G8d-my-qxs" firstAttribute="top" secondItem="RcH-hj-xHw" secondAttribute="bottom" constant="35" id="QEw-dp-d3f"/>
+                            <constraint firstItem="DPt-hh-FFp" firstAttribute="top" secondItem="1gK-op-OqP" secondAttribute="bottom" constant="44" id="Vas-h1-7dh"/>
+                            <constraint firstItem="DPt-hh-FFp" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="41" id="WJt-IG-GyL"/>
+                            <constraint firstItem="ief-1S-YGq" firstAttribute="leading" secondItem="t75-ii-Y5O" secondAttribute="trailing" constant="53" id="b0y-s8-KnY"/>
+                            <constraint firstItem="6lC-lh-W5E" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="cqk-V9-Fe6"/>
+                            <constraint firstItem="GNv-Qu-wCy" firstAttribute="top" secondItem="6lC-lh-W5E" secondAttribute="bottom" constant="50" id="dqr-fH-jOA"/>
+                            <constraint firstItem="1gK-op-OqP" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="41" id="els-nb-3uk"/>
+                            <constraint firstItem="1gK-op-OqP" firstAttribute="top" secondItem="GNv-Qu-wCy" secondAttribute="bottom" constant="55" id="fo5-rn-FfW"/>
+                            <constraint firstItem="5fE-u1-3TB" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="l2C-dt-1RF"/>
+                            <constraint firstItem="JBa-xV-4N3" firstAttribute="top" secondItem="ief-1S-YGq" secondAttribute="bottom" constant="28.5" id="lWh-Fy-Mtc"/>
+                            <constraint firstItem="6lC-lh-W5E" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="voj-32-hnu"/>
+                            <constraint firstItem="RcH-hj-xHw" firstAttribute="top" secondItem="b6r-ZN-vHb" secondAttribute="bottom" constant="46" id="wRI-Il-Lxg"/>
+                            <constraint firstItem="t75-ii-Y5O" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="41" id="xUz-ys-Kcr"/>
+                            <constraint firstItem="G8d-my-qxs" firstAttribute="leading" secondItem="DPt-hh-FFp" secondAttribute="trailing" constant="40" id="yir-Dj-kly"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="calcInterestButton" destination="JBa-xV-4N3" id="ren-Ql-esy"/>
+                        <outlet property="numYearsTextField" destination="G8d-my-qxs" id="7FK-Tg-Abw"/>
+                        <outlet property="outputTextView" destination="5fE-u1-3TB" id="vVe-Eo-q6V"/>
+                        <outlet property="principalTextField" destination="b6r-ZN-vHb" id="xRf-oA-f1e"/>
+                        <outlet property="rateTextField" destination="RcH-hj-xHw" id="Zau-sf-VWY"/>
+                        <outlet property="timesPerYearTextField" destination="ief-1S-YGq" id="qO8-sn-Z4v"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="117.59999999999999" y="123.68815592203899"/>
+        </scene>
+    </scenes>
+</document>
